@@ -1,3 +1,13 @@
+@font-face {
+  font-family: cageroll-cage;
+  src: url(./assets/Cageroll-Cage.otf);
+}
+
+@font-face {
+  font-family: cageroll-standard;
+  src: url(./assets/Cageroll-Standard.otf)
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,41 +15,23 @@
 body {
   width: 100vw;
   height: 100vh;
-  font-family: Helvetica, Arial, sans-serif;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  background: rgba(188, 105, 138, 0.5);
-  background-image: radial-gradient(circle at bottom left, rgba(255, 255, 0, 0.9), rgba(255, 255, 0, 0) 70%),
-    radial-gradient(circle at top left, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 70%),
-    radial-gradient(circle at center right, rgba(255, 0, 255, 0.8), rgba(255, 0, 255, 0) 50%);
-  background-size: 200% 200%;
-  animation: movement 30s ease infinite alternate-reverse;
+  background-color: #000 ;
+  background-image: url(./assets/bbblurry.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
 }
 
-@keyframes movement {
-  0% {
-    background-position: 0% 0%;
-  }
-  25% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  75% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
 
 article {
-  padding: 1rem;
-  width: 40vw;
-  height: 22vw;
+  padding: 2.5em;
+  width: 40em;
+  height: 22em;
   color: white;
 
   /* From https://css.glass */
@@ -48,9 +40,43 @@ article {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.8px);
   -webkit-backdrop-filter: blur(5.8px);
-  border: 1px solid rgba(255, 255, 255, 0.27);
+  border: 3px solid rgba(255, 255, 255, 0.551);
 }
 
 h1 {
+  font-family: cageroll-standard;
+  color: lime;
+  font-size: 3em;
+  font-weight: 100;
+  padding-left: 0.5em;
+  text-align: center;
+  color: white;
+}
+h2{
+  font-family: cageroll-cage;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+}
+p {
+  text-align: center;
+  padding-right: 2.5em;
+  margin: 1em;
+}
+
+a,p {
+  text-decoration: none;
+  font-family: 'Oxanium', cursive;
+
+}
+
+.git{
+  padding-left: 1.5em;
+  text-align: left;
+}
+
+.web{
+  padding-right: 2.5em;
+  margin-left: 27em;
   text-align: center;
 }

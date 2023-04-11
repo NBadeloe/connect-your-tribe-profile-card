@@ -1,6 +1,7 @@
 // Importeer express uit de node_modules map
 import express from 'express'
 
+
 // Maak een nieuwe express app aan
 const app = express()
 
