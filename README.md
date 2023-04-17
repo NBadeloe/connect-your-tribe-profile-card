@@ -15,9 +15,9 @@ Een profile card gemaakt met node.js, ejs en express.
 ## Kenmerken
 Er is gebruik gemaakt van:
 
-*node.js(javascrip engine om serverside webapplicatie te maken)
-*ejs(javascript template voor data verwerking)
-*express(javascript gebaseerde framework met focus op api data verwerking)
+* node.js(javascrip engine om serverside webapplicatie te maken)
+* ejs(javascript template voor data verwerking)
+* express(javascript gebaseerde framework met focus op api data verwerking)
 
 ## Installatie
 Clone en run:
