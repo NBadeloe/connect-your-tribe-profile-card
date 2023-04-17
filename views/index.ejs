@@ -1,14 +1,15 @@
 <%- include('./partials/head') %>
 
 <article>
-  <h1>Nandita Badeloe</h1>
-  <h2>MR.WORLDWIDE</h2>
-  <p>ewa ja man vet leip</p>
-
-  <a href="https://github.com/NBadeloe" class="git" >
+  <!-- render alle data door het oobject aaan te spreken met member. gevolgd door het data veld -->
+  <h1> <%member.name %> <%= member.surname %></h1>
+  <h2><%= member.nickname %></h2>
+  <p><%= member.bio.html %></p>
+<!-- steepje ipv is om de raw data op te halen -->
+  <a href="https://github.com/<%- member.gitHubHandle %>" class="git" >
    <img src="/assets/github.png" alt="github logo">
  </a> 
- <a href="#" class="web">
+ <a href=<%= member.website %> class="web">
   <img src="/assets/globe.png" alt="world icon">
  </a>
 </article>
